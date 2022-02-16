@@ -1,0 +1,66 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+}
+body #next-button {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 255, 255, 0.356);
+  margin-right: 1rem;
+}
+body #next-button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.788);
+}
+body #prev-button {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 255, 255, 0.356);
+  margin-left: 1rem;
+}
+body #prev-button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.788);
+}
+body .images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .images .carousel {
+  position: absolute;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition: 0.15s linear;
+}
+body .images .carousel.top {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.15s linear;
+}/*# sourceMappingURL=styles.css.map */
